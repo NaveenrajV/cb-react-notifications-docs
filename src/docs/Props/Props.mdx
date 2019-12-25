@@ -1,0 +1,85 @@
+---
+name: Props
+route: /props
+---
+import "./Props.css"
+import bell from "../../assets/default_bell.svg"
+
+### Props
+
+<div className="props">
+  <div className="prop">
+      <div className="name">data</div>
+       <div>The data that consists of notification messages to be rendered.</div>
+      <ul>
+        <li><span className="title">Type :</span> string (URL) | JSON | Object</li>
+        <li><span className="title">Default :</span> {"{}"}</li>
+        <li><span className="title">Schema :</span> {"{image, message ,detailPage, receivedTime}"}</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">renderItem</div>
+       <div>Custom react component that can be render for every message instead of default one.</div>
+      <ul>
+        <li><span className="title">Type :</span> React.Component</li>
+        <li><span className="title">Default :</span> null</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">header</div>
+       <div>Content for header title ,option and action onClick</div>
+      <ul>
+        <li><span className="title">Type :</span> Object</li>
+        <li><span className="title">Default :</span> {"{title : 'Notifications', option: {name: 'Mark all as read',onClick: ()=>{}}"}</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">links</div>
+       <div>Link for redirect onclick of see all option</div>
+      <ul>
+        <li><span className="title">Type :</span> Object</li>
+        <li><span className="title">Default :</span> {"{seeAll :''}"}</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">cardOptions</div>
+       <div>Whether a default options on every message display or not.</div>
+      <ul>
+        <li><span className="title">Type :</span> bool</li>
+        <li><span className="title">Default :</span> true</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">classNamePrefix</div>
+       <div>Custom CSS styles can be given by providing className prefix and including the css file. </div>
+      <ul>
+        <li><span className="title">Type :</span> string</li>
+        <li><span className="title">Default :</span> ""</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">displaySeeAll</div>
+       <div>Whether the see all option should be displayed or not.</div>
+      <ul>
+        <li><span className="title">Type :</span> bool</li>
+        <li><span className="title">Default :</span> true</li>
+      </ul>
+  </div>
+  <div className="prop">
+      <div className="name">icon</div>
+       <div>Notification icon can be provided as image.</div>
+      <ul>
+        <li><span className="title">Type :</span> Image</li>
+        <li><span className="title">Default :</span> <img src={bell} style={{margin:0}} className="bell-image"/></li>
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
