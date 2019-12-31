@@ -1,24 +1,21 @@
-a {
+.okrjoy-notifications {
   text-decoration: none;
   color: #999;
 }
 
-.okrjoy-notification-icon {
-  height: 2rem;
-  width: 2rem;
+.okrjoy-notifications .okrjoy-icon {
   position: relative;
 }
 
-.okrjoy-notification-icon img {
+.okrjoy-notifications .okrjoy-icon img {
   height: 20px;
   width: 20px;
-  cursor: pointer;
 }
 
-.okrjoy-notification-count {
+.okrjoy-notifications .okrjoy-count {
   position: absolute;
   top: -2px;
-  right: 8px;
+  right: 6px;
   font-size: 10px;
   border-radius: 50%;
   padding: 0 3px;
@@ -27,7 +24,7 @@ a {
   color: white;
 }
 
-.okrjoy-notification-container {
+.okrjoy-notifications .okrjoy-container {
   width: 320px;
   position: absolute;
   background: #fff;
@@ -51,7 +48,7 @@ a {
   overflow-y: hidden;
 }
 
-.okrjoy-notification-container .okrjoy-notification-header {
+.okrjoy-notifications .okrjoy-container .okrjoy-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,22 +63,27 @@ a {
   font-size: 14px;
 }
 
-.okrjoy-notification-container .okrjoy-notification-header .okrjoy-header-option {
+.okrjoy-notifications .okrjoy-container .okrjoy-header .okrjoy-header-title {
+  color: #1d2129;
+  font-weight: bold;
+}
+
+.okrjoy-notifications .okrjoy-container .okrjoy-header .okrjoy-header-option {
   margin: 0 5px;
-  color: #7ac2fa;
+  color: #365899;
 }
 
-.okrjoy-notification-container .okrjoy-notification-header .okrjoy-header-option:hover {
+.okrjoy-notifications .okrjoy-container .okrjoy-header .okrjoy-header-option:hover {
   cursor: pointer;
-  color: white;
+  text-decoration: underline;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items {
+.okrjoy-notifications .okrjoy-container .okrjoy-items {
   height: 400px;
   overflow: auto;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-empty-notifications {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-empty-notifications {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +96,7 @@ a {
   height: inherit;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,15 +109,15 @@ a {
   border-bottom: 1px solid #f0ebe3;
   font-size: 13px;
   border-radius: 0;
-  padding: 10px;
+  padding: 4px;
   margin-bottom: 0;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card:hover {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card:hover {
   background-color: #ebedf0;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-content {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,18 +126,18 @@ a {
           align-items: center;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-content .okrjoy-time {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-content .okrjoy-time {
   color: #999;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-content .okrjoy-message {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-content .okrjoy-message {
   color: #939393;
   font-weight: 700;
-  width: 200px;
+  width: 220px;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-content::after {
-  content: "\2605 New";
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-content::after {
+  content: '\2605 New';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,40 +152,40 @@ a {
   background: #cef;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-image {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-image {
   margin: 5px;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-image img {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-image img {
   height: 2.5rem;
   border-radius: 50%;
   border: 1px solid #f0ebe3;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-options {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-options {
   visibility: hidden;
   text-align: center;
   font-size: 20px;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-options .okrjoy-option {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-options .okrjoy-option {
   cursor: pointer;
   opacity: 0.5;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card .okrjoy-options .okrjoy-option:hover {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card .okrjoy-options .okrjoy-option:hover {
   opacity: 1;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card:hover {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card:hover {
   background-color: #f4f4f4;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .okrjoy-card:hover .okrjoy-options {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .okrjoy-card:hover .okrjoy-options {
   visibility: visible;
 }
 
-.okrjoy-notification-container .okrjoy-notification-items .loader {
+.okrjoy-notifications .okrjoy-container .okrjoy-items .loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +197,7 @@ a {
           justify-content: center;
 }
 
-.okrjoy-notification-container .notification-footer {
+.okrjoy-notifications .okrjoy-container .notification-footer {
   text-align: center;
   padding: 5px;
   color: #365899;
@@ -203,7 +205,7 @@ a {
   font-weight: bold;
 }
 
-.okrjoy-notification-container .notification-footer .notification-see_all {
+.okrjoy-notifications .okrjoy-container .notification-footer .notification-see-all {
   cursor: pointer;
 }
 /*# sourceMappingURL=okrjoy-styles.css.map */

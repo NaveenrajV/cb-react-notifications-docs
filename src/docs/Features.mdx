@@ -9,7 +9,7 @@ import logo from "../assets/cblogo.png"
 import "../okrjoy/okrjoy-styles.css";
 import CustomComponent from "../CustomComponent/CustomComponent";
 import "../Playground/Playground.css"
-
+import data from "./data"
 
 
 ## Default 
@@ -19,8 +19,7 @@ The Default notification component requires only data,function and links for opt
 
 <Playground>
   <Notifications
-    data="https://raw.githubusercontent.com/NaveenrajV/cb-notifications/master/Data.json"
-    links={{ seeAll: "/seeAll" }}
+    data={data}
   />
 </Playground>
 
@@ -30,9 +29,8 @@ This can be used customize individual card or message in the notifications.
 
 <Playground>
   <Notifications
-    renderItem={CustomComponent}
-    data="https://raw.githubusercontent.com/NaveenrajV/cb-notifications/master/Data.json"
-    links={{ seeAll: "/seeAll" }}
+    notificationCard={CustomComponent}
+    data={data}
   />
 </Playground>
 
@@ -43,13 +41,12 @@ The Styles of a component can be provided by using Class name prefix and also ic
 
 <Playground>
   <Notifications
-    data={{
-      "1": {
+    data={
+      [{
         image: logo,
         message: "Kameshwaran S had shared a feedback with you.",
         detailPage: "/"
-      },
-    "2": {
+      },{
       image: logo,
       message: (
         <p>
@@ -57,15 +54,16 @@ The Styles of a component can be provided by using Class name prefix and also ic
         </p>
       ),
       detailPage: "/"
-    }}}
-      links={{ seeAll: "/seeAll" }}
-   header={{
+    }]
+    }
+      
+   header={
+          {
             title: "Notifications",
-            option: { name: "View All", onClick: ()=>console.log("Clicked") }
-          }}
+            option: { text: "View All", onClick: ()=>console.log("Clicked") }
+          }
+        }
       classNamePrefix="okrjoy"
-      cardOptions={false}
       icon={bell}
-      displaySeeAll={false}
     />
 </Playground>

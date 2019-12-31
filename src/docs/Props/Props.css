@@ -1,20 +1,30 @@
-.props {
-  font-size: 1rem;
+.OuterContainer {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background-color: #FCFBFA;
+  color: #2D3747;
+  font-size: 20px;
+  border-radius: 4px;
+  overflow-x: auto;
 }
 
-.name {
-  font-weight: bold;
-  font-size: 1.2rem;
+table {
+  width: 100%;
+  border-collapse: collapse;
+
 }
 
-li {
-  margin-left: 1.5rem;
+table td,
+th {
+  border: 1px dotted black;
+  text-align: left;
+  padding: 8px;
+}
+td:nth-child(1){
+  color: #0B5FFF;
 }
 
-.title {
-  font-weight: bold;
-}
-
-.bell-image {
-  height: 20px;
+.schema{
+  font-size: 18px;
 }
