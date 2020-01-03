@@ -22,7 +22,7 @@ const Props = () => {
                 Schema : {"{image, message ,detailPage, receivedTime}"}
               </span>
             </td>
-            <td>Array | string (URL) | JSON</td>
+            <td> string (URL) |Array | JSON</td>
             <td>[]</td>
           </tr>
           <tr>
